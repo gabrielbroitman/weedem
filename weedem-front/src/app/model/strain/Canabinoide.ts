@@ -29,4 +29,4 @@ const canabinoides: string[] = [
 'cbl'
 ];
 
-const objects = canabinoides.map( canabinoide => new Canabinoide().nome);
+const object = canabinoides.map( canabinoide => new Canabinoide().nome);
