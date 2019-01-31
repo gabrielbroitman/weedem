@@ -1,28 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 import { SharedModule } from './shared/shared.module';
+import { ErrorsModule } from './errors/errors.module';
+import { StrainComponent } from './features/strain/strain.component';
 
-const appRoutes: Routes = [
-  { path: '',
-    redirectTo: '/strains',
-    pathMatch: 'full'
-  },
-  { path: '**', component: PageNotFoundComponent }
-];
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
+    StrainComponent
   ],
   imports: [
+    // servicos compartilhados
     SharedModule.forRoot(),
-    RouterModule.forRoot(appRoutes),
-    BrowserModule
+    RouterModule,
+    BrowserModule,
+    ErrorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
