@@ -1,11 +1,15 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-imports: [ CommonModule ],
+imports: [
+  CommonModule,
+  ReactiveFormsModule
+
+ ],
 declarations: [], // componentes vao aqui e no exports
-exports: [CommonModule, FormsModule, DatePipe]
+exports: [CommonModule, ReactiveFormsModule, DatePipe]
 })
 export class SharedModule {
   static forRoot(): ModuleWithProviders {

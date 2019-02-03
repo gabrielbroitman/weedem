@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Strain } from 'src/app/model/strain/Strain';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-strain',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StrainComponent implements OnInit {
 
-  constructor() { }
+  strains: Strain[];
+
+  constructor(private strain: Strain) { }
 
   ngOnInit() {
+
+
+  }
+
+
+  createReactiveForm() {
+
   }
 
 }

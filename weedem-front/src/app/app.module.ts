@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app.routing.module';
     BrowserModule,
     // servicos singleton vem daqui
     SharedModule.forRoot(),
+    SharedModule,
     ErrorsModule,
     AppRoutingModule
   ],
