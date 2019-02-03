@@ -11,10 +11,10 @@ imports: [
 declarations: [], // componentes vao aqui e no exports
 exports: [CommonModule, ReactiveFormsModule, DatePipe]
 })
-export class SharedModule {
+export class SharedServicesModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SharedModule,
+      ngModule: SharedServicesModule,
       providers: [
         // MyService SINGLETON
       ]

@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
+import { SharedServicesModule } from './shared/shared-services.module';
 import { ErrorsModule } from './errors/errors.module';
 import { AppRoutingModule } from './app.routing.module';
+import { StrainModule } from './features/strain/strain.module';
 
 
 
@@ -12,9 +13,9 @@ import { AppRoutingModule } from './app.routing.module';
   imports: [
     BrowserModule,
     // servicos singleton vem daqui
-    SharedModule.forRoot(),
-    SharedModule,
+    SharedServicesModule.forRoot(),
     ErrorsModule,
+    StrainModule,
     AppRoutingModule
   ],
   declarations: [AppComponent],

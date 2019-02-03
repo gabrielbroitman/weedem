@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Strain } from 'src/app/model/strain/Strain';
+import { Observable } from 'rxjs';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({

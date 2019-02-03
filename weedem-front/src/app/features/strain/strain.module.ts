@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedServicesModule } from 'src/app/shared/shared-services.module';
+import { StrainComponent } from './strain.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedServicesModule
   ],
-  declarations: []
+  declarations: [ StrainComponent]
 })
 export class StrainModule { }

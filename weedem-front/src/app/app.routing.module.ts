@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
+import { StrainComponent } from './features/strain/strain.component';
 
 const appRoutes: Routes = [
   { path: '',
@@ -8,8 +9,7 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent },
-  // { path: 'detail/:id', component: StrainDetailComponent },
- // { path: 'heroes', component: StrainComponent }
+  { path: 'strain', component: StrainComponent }
 ];
 
 @NgModule({
