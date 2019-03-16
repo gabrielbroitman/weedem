@@ -5,13 +5,13 @@
         "directive-selector": [
             true,
             "attribute",
-            "app",
+            "weedem",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
-            "app",
+            "weedem",
             "kebab-case"
         ],
         "quotemark": [
